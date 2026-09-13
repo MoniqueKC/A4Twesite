@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /mockups/
+Disallow: /_render/
+Disallow: /_hero-mockup
+Disallow: /thanks
+Disallow: /statement-checker-demo
+
+# Plain-text briefing for AI assistants: /llms.txt
 
 Sitemap: https://admin4tradies.co.nz/sitemap.xml
