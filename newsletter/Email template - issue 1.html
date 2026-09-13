@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Exploring Tradie — the email that carries each issue</title>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@800;900&family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5BBA47;--green-dk:#3E8530;--ink:#141715;--x:#13B5EA}
+*{box-sizing:border-box}
+body{margin:0;background:#eceeec;font-family:'Saira',system-ui,sans-serif;color:#2a2e2a;display:flex;justify-content:center;padding:40px 20px 70px}
+a{color:var(--green-dk)}
+.sheet{width:100%;max-width:720px;background:#fff;border-radius:16px;padding:38px 42px 44px;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.kick{font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;color:var(--green-dk)}
+h1{font-family:'Saira Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:34px;line-height:1;margin:6px 0 0;color:var(--ink)}
+.meta{font-size:14px;color:#6b716b;margin:10px 0 0}
+.bar{height:3px;background:var(--green);margin:22px 0 26px}
+.hdr{display:grid;grid-template-columns:70px 1fr;gap:6px 12px;font-size:14.5px;margin-bottom:24px}
+.hdr b{font-weight:600;color:#6b716b}
+.body{font-size:16px;line-height:1.66;white-space:pre-line}
+.acts{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+button{font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:14px;border:0;border-radius:9px;padding:13px 22px;cursor:pointer;background:var(--ink);color:#fff}
+.done{font-size:14px;color:var(--green-dk);align-self:center}
+.note{margin-top:30px;padding-top:22px;border-top:1px solid #e3e6e3;font-size:14px;line-height:1.6;color:#5c625c}
+.note h2{font-family:'Saira Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:16px;color:var(--ink);margin:0 0 8px}
+.note ol{margin:0;padding-left:20px}.note li{margin-bottom:4px}
+</style></head><body>
+<div class="sheet">
+<div class="kick">Template · the short email that carries each issue</div>
+<h1>Exploring Tradie #1</h1>
+<p class="meta">Copy into Outlook. Send to yourself, BCC the list. Change the bracketed bits each month; leave the shape alone.</p>
+<div class="bar"></div>
+<div class="hdr"><b>To</b><span>monique@admin4tradies.co.nz</span><b>BCC</b><span>[the list]</span><b>Subject</b><span>Exploring Tradie #1 · Eyes that see</span></div>
+<div class="body" id="body">Hi [first name]
+
+Every tradie I have suggested AI to this year has said the same three things. I don't have time. I wouldn't know how to do it alone. I'm not sure what I'd use it on.
+
+They are right. This issue is about why and what the actual first step is. It is smaller than you think and it is not AI.
+
+Read it here: admin4tradies.co.nz/newsletter/2026-09-eyes-that-see
+
+Also this month: a tool I built that asks the four questions I open every mentoring session with and hands you one Kaizen tool to try for two weeks. Four taps. admin4tradies.co.nz/start-here
+
+Reply with a question and it may be next month's "Ask me".
+
+Kind regards
+Monique
+
+Monique Clow · Admin for Tradies · Exploring Tradie
+0275 895 895 · admin4tradies.co.nz
+
+You are getting this because you signed up at admin4tradies.co.nz. To stop, reply with "stop" and I will take you off the same day.</div>
+<div class="acts"><button id="cp">Copy email</button><span class="done" id="ok" hidden>Copied</span></div>
+<div class="note">
+<h2>The shape, every month</h2>
+<ol>
+<li>One hook, two or three lines, in your voice. The thing you would say across a table.</li>
+<li>One link to the issue on the website. The website is the asset; the email is the knock on the door.</li>
+<li>One "also this month", if there is one. Never two.</li>
+<li>The reply invitation. It is where "Ask me" comes from.</li>
+<li>The stop line. Required under the Unsolicited Electronic Messages Act and it is also good manners.</li>
+</ol>
+<p style="margin:12px 0 0">No attachments. No PDF. A PDF on a phone on site does not get opened and attachments to a BCC list are what spam filters look for.</p>
+</div>
+</div>
+<script>document.getElementById('cp').onclick=function(){navigator.clipboard.writeText(document.getElementById('body').textContent).then(()=>{document.getElementById('ok').hidden=false})}</script>
+</body></html>
