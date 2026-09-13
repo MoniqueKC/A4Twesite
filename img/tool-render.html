@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@800;900&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;font-family:'Saira',sans-serif;display:flex;flex-wrap:wrap;gap:30px;padding:30px}
+.t{width:720px;height:420px;background:#fff;position:relative;overflow:hidden}
+.d{font-family:'Saira Condensed',sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+/* 8 wastes */
+.w8{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:26px}
+.w8 div{border:2px solid #E6E8E6;border-radius:14px;padding:16px 14px;display:flex;flex-direction:column;justify-content:flex-end;height:152px;position:relative}
+.w8 div b{font-size:27px;color:#000;line-height:1}
+.w8 div span{font-size:15px;color:#6B716B;margin-top:6px;line-height:1.3}
+.w8 div i{position:absolute;top:14px;left:14px;width:34px;height:34px;border-radius:50%;background:#EEF8EA;color:#3E8530;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:16px}
+.w8 div.x{border-color:#13B5EA;background:#e7f7fc}.w8 div.x i{background:#13B5EA;color:#fff}
+/* 5 whys */
+.wy{padding:36px 30px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.wy div{border:2px solid #E6E8E6;border-radius:14px;padding:16px;height:130px}
+.wy div b{font-size:30px;color:#000;display:block;line-height:1}
+.wy div span{font-size:15px;color:#6B716B;display:block;margin-top:6px}
+.wy div.q{background:#000;border-color:#000}.wy div.q b{color:#fff}.wy div.q span{color:#c8ccc8}
+.wy div.x{background:#e7f7fc;border-color:#13B5EA}.wy div.x b{color:#0f8bb5}
+/* scorecard */
+.sc{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:30px;height:100%;box-sizing:border-box;position:relative}
+.sc div{background:#EEF8EA;border-radius:16px;padding:22px 24px;position:relative}
+.sc div:nth-child(2) b,.sc div:nth-child(4) b{text-align:right}.sc div:nth-child(2) span,.sc div:nth-child(4) span{text-align:right}
+.sc div:nth-child(3),.sc div:nth-child(4){display:flex;flex-direction:column;justify-content:flex-end}
+.sc div b{font-size:34px;color:#000;display:block;line-height:1}
+.sc div span{font-size:16px;color:#3E8530;display:block;margin-top:8px}
+.sc .c{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:#fff;border:6px solid #13B5EA;display:grid;place-items:center;text-align:center;font-size:19px;line-height:1.05;color:#000;padding:16px;box-sizing:border-box}
+/* north star */
+.ns{height:100%;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:0 40px;box-sizing:border-box}
+.ns .txt b{font-size:64px;color:#000;display:block;line-height:.95}
+.ns .txt span{font-size:20px;color:#6B716B;display:block;margin-top:14px;max-width:300px}
+/* small actions */
+.sa{height:100%;position:relative;padding:30px 40px;box-sizing:border-box}
+.sa b{font-size:48px;color:#000;display:block;line-height:.95}
+.sa span{font-size:18px;color:#6B716B;display:block;margin-top:8px}
+</style></head><body>
+
+<div class="t" id="t-wastes"><div class="w8">
+<div><i>T</i><b class="d">Transport</b><span>The second trip to the merchant</span></div>
+<div><i>I</i><b class="d">Inventory</b><span>Materials sitting in the container</span></div>
+<div><i>M</i><b class="d">Motion</b><span>Hunting for the right fitting</span></div>
+<div class="x"><i>W</i><b class="d">Waiting</b><span>Crew on site, decision not made</span></div>
+<div><i>O</i><b class="d">Over-production</b><span>Detail nobody asked for</span></div>
+<div class="x"><i>O</i><b class="d">Over-processing</b><span>Typing the same thing three times</span></div>
+<div><i>D</i><b class="d">Defects</b><span>Callbacks and rework</span></div>
+<div class="x"><i>S</i><b class="d">Skills unused</b><span>The owner doing admin at 9pm</span></div>
+</div></div>
+
+<div class="t" id="t-5s"><svg width="720" height="420" viewBox="0 0 720 420" font-family="Saira Condensed, sans-serif">
+<g id="wheel"></g>
+<circle cx="360" cy="210" r="78" fill="#fff" stroke="#E6E8E6" stroke-width="2"/>
+<text x="360" y="222" text-anchor="middle" font-weight="900" font-size="56" fill="#000">5S</text>
+</svg></div>
+
+<div class="t" id="t-whys"><div class="wy">
+<div class="q"><b class="d">The problem</b><span>The callback on Friday</span></div>
+<div><b class="d">Why?</b><span>The wrong bracket was fitted</span></div>
+<div><b class="d">Why?</b><span>Two sizes in one unlabelled bin</span></div>
+<div><b class="d">Why?</b><span>Nobody owns the van stock</span></div>
+<div><b class="d">Why?</b><span>It was never written down</span></div>
+<div class="x"><b class="d">Why? — the cause</b><span>No process, so it lives in one head</span></div>
+</div></div>
+
+<div class="t" id="t-scorecard"><div class="sc">
+<div><b class="d">Money</b><span>Margin per job · cash in the bank</span></div>
+<div><b class="d">Customer</b><span>Callbacks · repeat work</span></div>
+<div><b class="d">How the work runs</b><span>Quote to invoice · hours not billed</span></div>
+<div><b class="d">Crew</b><span>Who can do what · what's next</span></div>
+<div class="c d">The few numbers you watch</div>
+</div></div>
+
+<div class="t" id="t-northstar"><div class="ns">
+<svg width="300" height="300" viewBox="0 0 300 300"><polygon points="150,20 178,122 280,150 178,178 150,280 122,178 20,150 122,122" fill="#5BBA47"/><polygon points="150,70 166,134 230,150 166,166 150,230 134,166 70,150 134,134" fill="#3E8530"/><circle cx="238" cy="62" r="13" fill="#13B5EA"/><circle cx="58" cy="236" r="8" fill="#13B5EA"/></svg>
+<div class="txt"><b class="d">North Star</b><span>The one thing the business is aiming at, so the decisions in between get easier.</span></div>
+</div></div>
+
+<div class="t" id="t-actions"><div class="sa">
+<b class="d">Small &amp; simple actions</b><span>One every two weeks. Never everything at once.</span>
+<svg width="640" height="250" viewBox="0 0 640 250" style="position:absolute;left:40px;bottom:20px">
+<line x1="30" y1="220" x2="620" y2="220" stroke="#E6E8E6" stroke-width="3"/>
+<line x1="30" y1="220" x2="30" y2="10" stroke="#E6E8E6" stroke-width="3"/>
+<path d="M30 215 L140 215 L140 175 L250 175 L250 135 L360 135 L360 95 L470 95 L470 55 L580 55" fill="none" stroke="#5BBA47" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="140" cy="175" r="11" fill="#13B5EA"/><circle cx="250" cy="135" r="11" fill="#13B5EA"/><circle cx="360" cy="95" r="11" fill="#13B5EA"/><circle cx="470" cy="55" r="11" fill="#13B5EA"/>
+<text x="140" y="205" text-anchor="middle" font-family="Saira" font-weight="700" font-size="15" fill="#0f8bb5">Week 1</text>
+<text x="250" y="165" text-anchor="middle" font-family="Saira" font-weight="700" font-size="15" fill="#0f8bb5">Week 3</text>
+<text x="360" y="125" text-anchor="middle" font-family="Saira" font-weight="700" font-size="15" fill="#0f8bb5">Week 5</text>
+<text x="470" y="85" text-anchor="middle" font-family="Saira" font-weight="700" font-size="15" fill="#0f8bb5">Week 7</text>
+<text x="600" y="243" text-anchor="end" font-family="Saira" font-weight="700" font-size="14" fill="#6B716B">TIME</text>
+</svg>
+</div></div>
+
+<script>
+const S=[['Sort','#a7dd90','#1c3a14'],['Set in order','#7cc95f','#1c3a14'],['Shine','#5bba47','#fff'],['Standardise','#3e8530','#fff'],['Sustain','#13B5EA','#fff']];
+const cx=360,cy=210,rO=190,rI=92,seg=2*Math.PI/5,start=-Math.PI/2,gap=.03,g=document.getElementById('wheel');
+const P=(r,a)=>[cx+r*Math.cos(a),cy+r*Math.sin(a)];
+S.forEach((s,i)=>{const a0=start+i*seg+gap,a1=start+(i+1)*seg-gap,m=(a0+a1)/2;const [x0,y0]=P(rO,a0),[x1,y1]=P(rO,a1),[x2,y2]=P(rI,a1),[x3,y3]=P(rI,a0);
+const d=`M${x0} ${y0} A${rO} ${rO} 0 0 1 ${x1} ${y1} L${x2} ${y2} A${rI} ${rI} 0 0 0 ${x3} ${y3} Z`;
+const [nx,ny]=P((rO+rI)/2-12,m),[lx,ly]=P((rO+rI)/2+22,m);
+g.innerHTML+=`<path d="${d}" fill="${s[1]}"/><text x="${nx}" y="${ny-8}" text-anchor="middle" dominant-baseline="central" font-weight="900" font-size="34" fill="${s[2]}">${i+1}</text><text x="${nx}" y="${ny+22}" text-anchor="middle" dominant-baseline="central" font-weight="800" font-size="19" fill="${s[2]}">${s[0]}</text>`;});
+</script>
+</body></html>
